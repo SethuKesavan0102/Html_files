@@ -1,0 +1,16 @@
+.grid-container{
+    grid-template-columns: repeat(6,200px);
+    grid-template-rows: repeat(4,150px);
+}
+#one{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    /* if you give 4 columns in end value it takes only 3 columns: . . .
+    it doesn't take the 4th column  */
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    /* shorthand property
+    grid-column: 1/4;
+    grid-row: 1/4;*/
+} 

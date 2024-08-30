@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Document</title>
+    
+</head>
+<body>
+   
+    <!-- <p id="para">this is a paragraph</p>
+    <button type="button" onclick="changecolor()">Click</button> -->
+    
+    <script src="JSintro.js"></script>
+</body>
+<script>
+//      var person={}
+// person.firstname="siva"
+// person.lastname="ram"
+// person.age=20
+// // console.log(person)
+// console.log(person.lastname +" "+ person.firstname)
+// console.log(person["firstname"] +" "+ person["lastname"])
+
+const user = {
+    firstname:"siva",
+    lastname:"ram",
+    marks:{
+        sslc:200,
+        hsc:{
+            second:300
+        }
+    },
+    fullname:function(){
+        return this.firstname +" "+this.lastname
+    }
+}
+// console.log(user);
+// console.log(user.marks);
+console.log(user.marks.hsc);
+console.log(user.fullname())
+
+
+</script>
+</html>

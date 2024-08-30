@@ -1,0 +1,75 @@
+<html>
+<head>
+    
+    <title>GRID</title>
+    <style>
+         .grid-container{
+            display:grid;
+            margin: 10px;
+            border: 2px solid gray;
+            background-color: blueviolet;
+            grid-template-columns: repeat(6,1fr);
+             grid-template-rows: repeat(4,200px);
+            grid-template-areas: 
+             "header header header header header header"
+             "sidebar main main main content1 content1"
+             "content3 main main main content2 content2"
+             "content3 footer footer footer footer footer";
+
+        }
+        .items{
+            border: 2px solid green;
+            text-align:center;
+            border-radius: 10px;
+            background-color: rgb(228, 235, 9);
+            margin: 5px;
+            padding: 30px;
+            /* width: 150px;
+            height: 100px; */
+        }
+        #sidebar{
+            background-color: rgb(248, 8, 168);
+        }
+        #content1{
+            background-color: rgb(231, 16, 105);
+        }
+        #content2{
+            background-color: rgb(245, 10, 127);
+        }
+        #header{
+    grid-area: header;
+}
+#sidebar{
+    grid-area: sidebar;
+}
+#main{
+    grid-area: main;
+}
+#content1{
+    grid-area: content1;
+}
+#content2{
+    grid-area: content2;
+}
+#content3{
+    grid-area: content3;
+}
+#footer{
+    grid-area: footer;
+}
+       
+    </style>
+</head> 
+<body>
+   
+    <div class="grid-container">
+    <div class="items" id="header">1</div>
+    <div class="items" id="sidebar">2</div>
+    <div class="items" id="main">3</div>
+    <div class="items" id="content1">4</div>
+    <div class="items" id="content2">6</div>
+    <div class="items" id="content3">5</div>
+    <div class="items" id="footer">7</div>
+    </div>
+</body>
+</html>

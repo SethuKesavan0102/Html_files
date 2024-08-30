@@ -1,0 +1,19 @@
+.grid-container{
+   
+    /* grid-template-columns: 100px 1fr; */
+    grid-template-columns: repeat(4,100px);
+    /* grid-template-columns: 1fr repeat(2, 100px)1fr; */
+    /* grid-template-columns: repeat(3,minmax(100px,1fr))100px; */
+    justify-content:space-evenly;
+    /* grid-template-rows: 200px 150px 100px; */
+    grid-template-rows: repeat(2,100px);
+    align-content:center;
+     /* (if you want to use align-content you must set height) */
+    height: 700px;
+    /* shorthand property */
+    /* grid-template: repeat(2,100px)/repeat(4,100px);
+                    rows                columns  */
+}
+/* .items{
+   
+ }  */

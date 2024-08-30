@@ -1,0 +1,76 @@
+25.06.24 <br><br><br><br>
+<html>
+<head>
+   
+    <title>flex wrap</title>
+        <style>
+            .flex-container{
+                display:flex;
+                flex-direction: row; /*(row,column,row-reverse,column-reverse)*/
+                background-color: rgb(224, 248, 15);
+                flex-wrap: wrap;      /* wrap,wrap-reverse..... set container height,width and set item property padding don't set height,width fr item property */
+            /*we must set felx-wrap:wrap; for align-content*/
+            justify-content:center;      /*x-axis alignment*/
+                /* if you wish to use justify-content we can't set height ,width for container property*/
+                /*flex-start,flex-end,center,space-around,space-between,space-evenly*/
+
+                width: 800px;
+                height: 600px;
+
+                align-content: center;
+                /*y-axis alignment
+                (values:flex-start,flex-end,center,stretch,space-around,space-between,space-evenly)
+                if you wish to use align-content we must set width,height for container property
+                */
+                
+            }
+            .item{
+                background-color: rgb(254, 63, 10);
+                color: aquamarine;
+            /* width: 100px;
+                height: 100px;*/
+                padding: 30px;
+                margin: 10px;
+                text-align:center;
+                line-height: 75px;
+                font-size: 30px;
+            }
+            @media screen and (max-width:768)
+            {
+                .flex-container{
+                    display: grid;
+                }
+            }
+            #box1{
+                order: 4;
+            }
+            #box2{
+                order: 3;
+            }
+            #box3{
+                order: 1;
+            }
+            #box4{
+                order: 5;
+            }
+            #box5{
+                order: 2;
+            }
+        </style>
+</head>
+<body>
+    <div class="flex-container">
+    <div class="item" id="box1">1</div>
+    <div class="item" id="box2">2</div>
+    <div class="item" id="box3">3</div>
+    <div class="item" id="box4">4</div>
+    <div class="item" id="box5">5</div>
+    <!--<div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+    <div class="item">11</div>-->
+    </div>
+</body>
+</html>

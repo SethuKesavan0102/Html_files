@@ -1,0 +1,72 @@
+<html>
+<head>
+    
+    <title>CSS Combinators</title>
+    <style>
+        div p{
+            color: yellowgreen;
+            background-color: blue;
+        }
+       div > p{
+            color: yellowgreen;
+            background-color: blue;
+        }
+        /*(div + p{
+            color: yellowgreen;
+            background-color: blue;
+        }
+        div ~ p{
+            color: yellowgreen;
+            background-color: blue;
+        }*/
+
+     </style>
+</head>
+<body>
+    <h1>CSS Combinators</h1>
+    <h1>
+        A combinator is something that explains the relationship
+        between the selectors.
+    </h1>
+    <h2>There are four different combinators in CSS:</h2>
+    <h3>1.Descendant selector (space)</h3>
+    <h3>2.Child selector (>)</h3>
+    <h3>3.Adjacent sibling selector (+)</h3>
+    <h3>4.General sibling selector (~)</h3>
+
+    <h1>Descendant Selector</h1>
+    The descendant selector matches all elements that are 
+    descendants of a specified element.
+   <div>
+        <p>Paragraph 1</p>
+        <p>paragraph 2</p>
+        <section>
+            not child but Descendant
+            <p>Paragraph 3 (inside a section element).</p>
+        </section>
+        <p>Paragraph 4</p>
+        <p>Paragraph 5</p>
+    </div>
+    <p>Paragraph 6</p>
+    <p>Paragraph 7</p>
+    <p>Paragraph 8</p>
+    <p>Paragraph 9</p>
+
+    <h2>Child Selector</h2>
+    <p>
+        The child selector selects all elements that are the 
+        children of a specified element.
+    </p>
+    <h2>Adjacent Sibling selector</h2>
+    <p>
+        The + selector is used to select an element that is 
+        directly after another specific element.
+    </p>
+    <h2>General Sibling selector</h2>
+    <p>
+        The general sibling selector (~) selects all elements
+        that are next sibling of a specified element.
+    </p><br><br><br><br><br>
+
+</body>
+</html>
